@@ -1,0 +1,23 @@
+//
+   Created by Keiichi on 11/03/2017.
+
+extends layout
+block content
+    div.well
+        h1 add a new card
+        br
+        form(action='add' method='post')
+            table
+                tr
+                 td
+                    label Model :
+                 td
+                    input(type='text' name='model' size=35)
+                tr
+                 td
+                    label Price :
+                 td
+                    input(type='text' name='quote' size=15)
+                 td
+                 td(align='right')
+                    input(type='Submit', value='Save')
